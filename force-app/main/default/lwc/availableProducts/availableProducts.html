@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Available Products" class="slds-text-align_center">
+        <div style="height: 300px">
+            <lightning-datatable
+                key-field="id"
+                data={availableProducts.data}
+                columns={columns}
+                default-sort-direction={defaultSortDirection}
+                sorted-direction={sortDirection}
+                sorted-by={sortedBy}
+                onsort={onHandleSort}>
+            </lightning-datatable>
+        </div>  
+    </lightning-card>
+</template>
